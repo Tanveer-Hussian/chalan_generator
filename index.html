@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="njv logo.jpeg">
+  <title> NJV Fee Voucher Generator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+
+  <div class="container">
+    <div class="header">
+        <img src="njv logo.jpeg " alt="NJV HIGHER SECONDARY SCHOOL KARACHI" class="logo">
+        <div class="school-name">NJV HIGHER SECONDARY SCHOOL KARACHI</div>
+    </div>
+    <form id="chalan-form">
+
+      <div class="form-group">
+        <label for="bank-account">Bank Account Number(Pay into):</label>
+        <input type="text" id="bank-account" value="Muhammad Khan  123478901213" readonly class="bold-text">
+
+    </div>
+      <div class="form-group">
+        <label for="date" class="required">Date:</label>
+        <input type="date" id="date" required>
+      </div>
+      <div class="form-group">
+        <label for="student-name" class="required">Student's Name:</label>
+        <input type="text" id="student-name" required>
+      </div>
+      <div class="form-group">
+        <label for="father-name" class="required">Father's Name:</label>
+        <input type="text" id="father-name" required>
+      </div>
+      <div class="form-group">
+        <label for="student-nic" class="required">Student's CNIC:</label>
+        <input type="text" id="student-nic" pattern="\d{5}-\d{7}-\d" required>
+        <small>Format: 12345-1234567-1</small>
+      </div>
+      <div class="form-group">
+        <label for="bank-address">Bank Address:</label>
+        <select id="bank-address">
+            <option value="">Select a Branch</option>
+            <option value="HBL Clifton Branch, Karachi (Ref: 001)">HBL Clifton Branch, Karachi (Ref: 001)</option>
+            <option value="HBL Saddar Branch, Karachi (Ref: 002)">HBL Saddar Branch, Karachi (Ref: 002)</option>
+            <option value="HBL Tariq Road Branch, Karachi (Ref: 003)">HBL Tariq Road Branch, Karachi (Ref: 003)</option>
+            <option value="HBL Gulshan-e-Iqbal Branch, Karachi (Ref: 004)">HBL Gulshan-e-Iqbal Branch, Karachi (Ref: 004)</option>
+            <option value="HBL Korangi Branch, Karachi (Ref: 005)">HBL Korangi Branch, Karachi (Ref: 005)</option>
+            <option value="HBL North Nazimabad Branch, Karachi (Ref: 006)">HBL North Nazimabad Branch, Karachi (Ref: 006)</option>
+            <option value="HBL Defence Branch, Karachi (Ref: 007)">HBL Defence Branch, Karachi (Ref: 007)</option>
+            <option value="HBL University Road Branch, Karachi (Ref: 008)">HBL University Road Branch, Karachi (Ref: 008)</option>
+            <option value="HBL Sharah-e-Faisal Branch, Karachi (Ref: 009)">HBL Sharah-e-Faisal Branch, Karachi (Ref: 009)</option>
+            <option value="HBL Jinnah Terminal Branch, Karachi (Ref: 010)">HBL Jinnah Terminal Branch, Karachi (Ref: 010)</option>
+        </select>
+    </div>
+      <div class="form-group">
+        <label for="apply-for" class="required">Apply For:</label>
+        <select id="apply-for" required>
+          <option value="">Select</option>
+          <option value="Hostel Scholarship">Hostel Scholarship</option>
+          <option value="School Admission">School Admission</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="fee-category">Fee Category:</label>
+        <select id="fee-category">
+          <option value="">Select</option>
+          <option value="Hostel Admission">Hostel Admission</option>
+          <option value="School Admission (non-Hostel)">School Admission (non-Hostel)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="fee-description">Fee Description:</label>
+        <input type="text" id="fee-description">
+      </div>
+      <div class="form-group">
+        <label for="amount" class="required">Amount:</label>
+        <input type="number" id="amount" required>
+      </div>
+      <div class="form-group">
+        <label for="penalty">Late Fee or Penalty:</label>
+        <select id="penalty">
+          <option value="0">None</option>
+          <option value="500">500</option>
+          <option value="1000">1000</option>
+          <option value="1200">1200</option>
+          <option value="1500">1500</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="total-fee">Total Fee:</label>
+        <input type="number" id="total-fee" readonly>
+      </div>
+      <button type="button" id="generate-chalan" class="btn">Generate Chalan</button>
+      <div id="error-message" class="error"></div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>

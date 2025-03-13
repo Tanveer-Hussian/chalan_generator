@@ -1,0 +1,164 @@
+body {
+      background-image: url('njv.jpg');
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center center; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%; 
+    }
+    
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.school-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.required:after {
+    content: "*";
+    color: red;
+    margin-left: 5px; 
+}
+
+input, select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+.bold-text {
+    font-weight: bold;
+}
+
+@media print {
+    .chalan-section {
+        padding: 10px;
+        margin: 0;
+    }
+    .chalan-container {
+        gap: 0;
+    }
+
+    .header-print {
+        margin-bottom: 0;
+    }
+
+    .print-btn-container {
+        margin-top: 0;
+    }
+}
+
+.chalan-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0; 
+    margin-top: 0; 
+}
+
+.chalan-section {
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 0;
+}
+
+
+.header-print {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+hr {
+    margin: 0px 0;
+}
+
+.chalan-content {
+    display: grid;
+    grid-template-rows: repeat(11, auto);
+    row-gap: 5px;
+}
+
+.chalan-content div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.print-btn-container {
+    text-align: left;
+    margin-top: 20px; 
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}
+
+
+
+.print-btn {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
